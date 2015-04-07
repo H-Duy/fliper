@@ -1,0 +1,67 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+}
+
+img{
+	border: none;
+}
+
+.clearfix{
+	clear: both;
+}
+
+/*Wrapper*/
+#wrapper{
+	text-align: center;
+}
+
+/*Step*/
+#step{
+	font-weight: bold;
+	color: blue;
+	font-size: 16px;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+#step b{
+	color: red;
+}
+
+/*Main*/
+
+#fliper-container{
+	display: inline-block;
+}
+
+#fliper-container ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 0px;
+	display: block;
+}
+
+#fliper-container ul li{
+	display: block;
+}
+
+#fliper-container ul li li{
+	display: inline-block;
+	vertical-align: top;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: yellow;
+	margin: 3px;
+	border: 1px solid #333;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+#fliper-container ul li li.flip{
+	background: red;
+	transform: rotateY(180deg);
+}
